@@ -5,8 +5,8 @@
  */
 
 export default {
-  title: 'React Static Boilerplate',
-  description: 'Static website generator for React.js web applications.',
+  title: 'Scentbird: Profile',
+  description: 'Profile page at Scentbird',
   googleAnalyticsId: 'UA-XXXXX-X',
 };
 
