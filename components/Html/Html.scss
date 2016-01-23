@@ -1,6 +1,5 @@
 @import '../variables.scss';
 
-
 /*
  * Normalisation of all browsers
  * ========================================================================== */
@@ -23,50 +22,6 @@
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
-}
-
-/*
- * Base styles
- * ========================================================================== */
-
-*, *:after, *:before {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  color: $text-color;
-  font: 20px/30px $font-family-base;
-}
-
-.layout {
-  min-width: 320px;
-
-  > div {
-    padding: 90px 0 100px;
-    background-color: #fff;
-    transition: padding .25s linear;
-  }
-}
-
-@media (max-width: $screen-md-max) {
-  .layout {
-
-    > div {
-      padding: 90px 0;
-    }
-  }
-}
-
-@media (max-width: $screen-sm-max) {
-  .layout {
-
-    > div {
-      padding: 90px 0 60px;
-    }
-  }
 }
 
 /*

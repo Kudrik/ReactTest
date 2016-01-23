@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.mainHeader {
+  margin: 0 0 31px;
+  text-align: center;
+  font: 30px/37px $font-family-bold;
+  text-transform: uppercase;
+  color: $brand-color;
+  transition: font .25s linear;
+}
+
+@media (max-width: $screen-sm-max) {
+  .mainHeader {
+    margin: 0 0 27px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

@@ -4,7 +4,7 @@
 
 $content-bg: #fff;
 $content-bg-contrast: #f7f8f9;
-
+$borders-color: #ececec;
 $text-color: #000;
 $brand-color: #ff458f;
 
@@ -13,6 +13,8 @@ $brand-color: #ff458f;
  * -------------------------------------------------------------------------- */
 
 $font-family-base: 'proxima_nova', 'Helvetica', sans-serif;
+$font-family-lite: 'proxima_nova_light', 'Helvetica', sans-serif;
+$font-family-bold: 'proxima_nova_semibold', 'Helvetica', sans-serif;
 
 /*
  * Media queries breakpoints
