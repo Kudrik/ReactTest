@@ -1,0 +1,67 @@
+@import '../variables.scss';
+
+.prizeCase {
+  font-size: 24px;
+  color: $text-second-color;
+  border-bottom: 1px solid $line-color;
+  overflow: hidden;
+
+  p {
+    position: relative;
+    display: block;
+    width: $screen-md-max;
+    margin: 0 auto;
+    padding: 67px 50px 51px 467px;
+    background: url("/i/PrizeCase/prize.png") 113px bottom no-repeat;
+  }
+
+  strong {
+    font-weight: bold;
+    font-family: $font-family-bold;
+  }
+}
+
+
+/*
+.prizeImg {
+  display: block;
+  width: 190px;
+  height: 149px;
+  position: absolute;
+  bottom: 0;
+  left: 44px;
+ }
+*/
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .prizeCase {
+
+    p {
+      background-image: url("/i/PrizeCase/prize@2x.png");
+      background-size: 190px 149px;
+    }
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .prizeCase {
+    font-family: $font-family-lite;
+
+    p {
+      width: auto;
+      padding: 67px 10px 51px 350px;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .prizeCase {
+    p {
+      width: auto;
+      padding: 60px 5px 181px;
+      text-align: center;
+      background-position: 50% bottom;
+    }
+  }
+}
