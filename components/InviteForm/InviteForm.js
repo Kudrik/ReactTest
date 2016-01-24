@@ -15,7 +15,7 @@ class InviteForm extends Component {
     return (
       <section className='inviteForm'>
         <h1>Get your free perfumes</h1>
-        <Formsy.Form onSubmit={this.submit} onValid={this.enableButton} onInvalid={this.disableButton} className="form">
+        <Formsy.Form onSubmit={this._submit} onValid={this._enableButton} onInvalid={this._disableButton} className="form">
           <MyInput name="email" validations="isEmail" validationError="Please enter a valid email" placeholder="Add friends’ email addresses" required />
           <button className={submitClasses} type="submit" disabled={!this.state.canSubmit}>Send</button>
         </Formsy.Form>
@@ -31,15 +31,15 @@ class InviteForm extends Component {
     );
   }
 
-  submit = (data) => {
+  _submit = (data) => {
     alert(JSON.stringify(data, null, 4));
   };
 
-  enableButton = () => {
+  _enableButton = () => {
     this.setState({ canSubmit: true });
   };
 
-  disableButton = () => {
+  _disableButton = () => {
     this.setState({ canSubmit: false });
   }
 }
