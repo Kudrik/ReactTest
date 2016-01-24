@@ -86,36 +86,34 @@
     display: flex;
     justify-content: space-between;
     margin: 23px 0 0;
+    padding: 0 5px;
+  }
 
-    .shareLink {
-      display: block;
-      width: 250px;
-      height: 50px;
-      line-height: 50px;
-      padding: 0 20px 0 69px;
-      text-align: left;
-      color: #fff;
-      font-size: 18px;
-      border-radius: 25px;
-      background: #4e6a9c 30px 50% no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAoCAQAAABZJmIXAAAApUlEQVR4AWPABP8Z/7P/5/nP/18AClnRFZj+X/H/9X9U4IlqQi9EFJ+iJqAAfkX/Vf7/JqyoHcglqOg0bkUIR39Hk3r4f+7/tv+tQKgGU8SLpuTtf17MAJRCU7QDWyjLoClaR4yitcQoWoMqnQSGxWiKzgDFYFCW4T9h4ESMImNiFKkSo0icGEUchBV9AQVBAhgWoUmdBopBYChRgTlYFY0qGlUEAC7fVOkdMYoKAAAAAElFTkSuQmCC');
-      background-size: 9px 20px;
+  .shareLink {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px 0 69px;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    background: #4e6a9c 30px 50% no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAoCAQAAABZJmIXAAAApUlEQVR4AWPABP8Z/7P/5/nP/18AClnRFZj+X/H/9X9U4IlqQi9EFJ+iJqAAfkX/Vf7/JqyoHcglqOg0bkUIR39Hk3r4f+7/tv+tQKgGU8SLpuTtf17MAJRCU7QDWyjLoClaR4yitcQoWoMqnQSGxWiKzgDFYFCW4T9h4ESMImNiFKkSo0icGEUchBV9AQVBAhgWoUmdBopBYChRgTlYFY0qGlUEAC7fVOkdMYoKAAAAAElFTkSuQmCC');
+    background-size: 9px 20px;
 
-      &.btn-gm {
-        background: #cc4a41 25px 50% no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAC/0lEQVR4Ac2ZA6x8RxSHb21EtW3bDWpHjVHrb9u2bdu2bda2tZz5eibvbvJ8Onf1TvKFN7O/weEGUQ12nADp58C0F8aDXS98KfwlJIU/hI+EOWDqQPJ2aHNsUCiD1CNghoL9RcCT38D0hdgleRSYuAHsCoEckAIzzq2ZQ4G/nAmml1tcFxBJcEuYdlyWImOXgD0okGc2QvyKiCLd47ffChQGMyqSw4TeS4GY66KIp8h/Lwb7o4Anfwq7hVXCYeEfAXQWw8ETPUV+dBLYbR7i/gIzBFIPwOrjK67397mQfj0UbwTKsRI+OznClZvBHt7a1kUEj5u6CMzAMBkgrIfvT4sSJ28BawUUPobkvdEjSfwKMF3hpzMiLmDnCSh8Av9cEBTLIHkfusjvIHZ5UEwDO00Xmn6lyCJdFWT/UITOCYptkHpcP83krTVAqOmhCN0W1AQDu1zJwbX91+SYDLkUuqt6oamH/MtCi4IthSlFOiRVikRG6OfVLig/nGuh/sjNKFVSwv+Gfjoj90KlsAb7d3Uf1QyhUl2B/ar6j749tchCLa4yA7tPcaZH/YT+eHqOhX6dcaYFSnhqU2ShazMBv4ny4S7/GBq/QrgaEtcJNwq3uB5MuEu41xXawsPCY5B+Qzmo0ZkU+iBYtFiax8zYSRHaonT78ZsidnZ+RB48Eex3yiHdX3pXfdDLvFfzcJqtlN/9itJpGOLXorchf0D8qtyJdG/XJpRr7xO1FfnaOUb2Il2jZz+M5BsQvxJsTEA/2fTz2TV39jMBhZ1VVl9gWnvEtwUQv8Zz2NY+k7J1Uk9qA4gtHmKNsLIkFsYucYPaiuulnw7nBT97zKEm6zvn7/PCyTERiAtHhMPCj0JawJPP4bez/2/7fJseW/PCTy6bRQkfXxZQ5B+QvCOih/5zgdKq5IojLuzloO83LcL3R+4x4/yGZYqF2Wu2h4NorMpnsRNA7FIwXSOOzX8CMxxSjwSFtJJ607wrjAK7TDgUVkOfh2FqK5jRQn1Xe2bz78d/SuBltzFKPKQAAAAASUVORK5CYII=');
-        background-size: 21px 21px;
-      }
+    &.btn-gm {
+      background: #cc4a41 25px 50% no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAC/0lEQVR4Ac2ZA6x8RxSHb21EtW3bDWpHjVHrb9u2bdu2bda2tZz5eibvbvJ8Onf1TvKFN7O/weEGUQ12nADp58C0F8aDXS98KfwlJIU/hI+EOWDqQPJ2aHNsUCiD1CNghoL9RcCT38D0hdgleRSYuAHsCoEckAIzzq2ZQ4G/nAmml1tcFxBJcEuYdlyWImOXgD0okGc2QvyKiCLd47ffChQGMyqSw4TeS4GY66KIp8h/Lwb7o4Anfwq7hVXCYeEfAXQWw8ETPUV+dBLYbR7i/gIzBFIPwOrjK67397mQfj0UbwTKsRI+OznClZvBHt7a1kUEj5u6CMzAMBkgrIfvT4sSJ28BawUUPobkvdEjSfwKMF3hpzMiLmDnCSh8Av9cEBTLIHkfusjvIHZ5UEwDO00Xmn6lyCJdFWT/UITOCYptkHpcP83krTVAqOmhCN0W1AQDu1zJwbX91+SYDLkUuqt6oamH/MtCi4IthSlFOiRVikRG6OfVLig/nGuh/sjNKFVSwv+Gfjoj90KlsAb7d3Uf1QyhUl2B/ar6j749tchCLa4yA7tPcaZH/YT+eHqOhX6dcaYFSnhqU2ShazMBv4ny4S7/GBq/QrgaEtcJNwq3uB5MuEu41xXawsPCY5B+Qzmo0ZkU+iBYtFiax8zYSRHaonT78ZsidnZ+RB48Eex3yiHdX3pXfdDLvFfzcJqtlN/9itJpGOLXorchf0D8qtyJdG/XJpRr7xO1FfnaOUb2Il2jZz+M5BsQvxJsTEA/2fTz2TV39jMBhZ1VVl9gWnvEtwUQv8Zz2NY+k7J1Uk9qA4gtHmKNsLIkFsYucYPaiuulnw7nBT97zKEm6zvn7/PCyTERiAtHhMPCj0JawJPP4bez/2/7fJseW/PCTy6bRQkfXxZQ5B+QvCOih/5zgdKq5IojLuzloO83LcL3R+4x4/yGZYqF2Wu2h4NorMpnsRNA7FIwXSOOzX8CMxxSjwSFtJJ607wrjAK7TDgUVkOfh2FqK5jRQn1Xe2bz78d/SuBltzFKPKQAAAAASUVORK5CYII=');
+      background-size: 21px 21px;
+    }
 
-      &.btn-link {
-        color: #999999;
-        border: 1px solid #30b661;
-        background: #e8f7ed 25px 50% no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAACeUlEQVR4Aa2VA/DcQBSHt8aw1qC2bdvD2hzUtu1RbdvO5f1eB7Vtm//abjfaXO527tthXvJtsnkQ0ROqill8Gk/5E+6C0H9vFqEPledD/MO58IXn7EqjpUMvfOUfynWbi0T/djMVIrnwxiior1Mrb+5Jqav7jo3ox815Ap92KKfr6a6jwv/IugQYhC9S+JHSR687vzetKz7SilKXQB2aMbAP+/Hsr85IJ1zMTcRX5DtuEhETj/JTV6lzwHOk8KSIBdxDCu+GL7JM1IUX8A7ew0u4D+X2Fc6QwnO+MsrNGzyZdoDKCwU4Ku/YLdRwZ/7sk76TRsZ3bd3WFu2n1GFa2IpY59i6AF5aCW/k1Cuy3paOn9iur45Ah0tYhUU4yd9s155tT+7VcVwoW4AOD6nx/4hZChf+P2iWUui+Uf0Anbsq1iXj076679QlQp2RV0jMUro62QKoKb5Qfnuq/9XhqdbbUdM/Lf/4n18gMQs5ddxZMSv8db8XrqLC//5HffEh6O3K46v3Y3elwUfHH7/FWxh4xT/83k7Ch9TtkwYGJLhaF6pqb+6ObhwP6/11+EIdhQrMsnZEBWdsZHyM5+9K3TOzmlDDp+VNG1VxsxjvcUnf8RQjlfADT31bj2RfRuqIaViJhTTWrLcumQgHf5I7NxexAHelcIIqTvkxmMrvShK5kKTw9LoECt2fI8EHnMQpnKPawcL+tjE90K0LagEK9mbBF/nIZx4xN5HUtcFLhS4YzHUkxRWeg+48A0f4h47uT9XybUXyaugkXARvw+i+KXRBGAVx00cXR/WFDntSYjo+evrJGjnJdKD01AWbcBJ3cQ670U8xtgP5CbG8caJs3+lNAAAAAElFTkSuQmCC');
-        background-size: 21px 21px;
-      }
+    &.btn-link {
+      color: #999999;
+      border: 1px solid #30b661;
+      background: #e8f7ed 25px 50% no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAACeUlEQVR4Aa2VA/DcQBSHt8aw1qC2bdvD2hzUtu1RbdvO5f1eB7Vtm//abjfaXO527tthXvJtsnkQ0ROqill8Gk/5E+6C0H9vFqEPledD/MO58IXn7EqjpUMvfOUfynWbi0T/djMVIrnwxiior1Mrb+5Jqav7jo3ox815Ap92KKfr6a6jwv/IugQYhC9S+JHSR687vzetKz7SilKXQB2aMbAP+/Hsr85IJ1zMTcRX5DtuEhETj/JTV6lzwHOk8KSIBdxDCu+GL7JM1IUX8A7ew0u4D+X2Fc6QwnO+MsrNGzyZdoDKCwU4Ku/YLdRwZ/7sk76TRsZ3bd3WFu2n1GFa2IpY59i6AF5aCW/k1Cuy3paOn9iur45Ah0tYhUU4yd9s155tT+7VcVwoW4AOD6nx/4hZChf+P2iWUui+Uf0Anbsq1iXj076679QlQp2RV0jMUro62QKoKb5Qfnuq/9XhqdbbUdM/Lf/4n18gMQs5ddxZMSv8db8XrqLC//5HffEh6O3K46v3Y3elwUfHH7/FWxh4xT/83k7Ch9TtkwYGJLhaF6pqb+6ObhwP6/11+EIdhQrMsnZEBWdsZHyM5+9K3TOzmlDDp+VNG1VxsxjvcUnf8RQjlfADT31bj2RfRuqIaViJhTTWrLcumQgHf5I7NxexAHelcIIqTvkxmMrvShK5kKTw9LoECt2fI8EHnMQpnKPawcL+tjE90K0LagEK9mbBF/nIZx4xN5HUtcFLhS4YzHUkxRWeg+48A0f4h47uT9XybUXyaugkXARvw+i+KXRBGAVx00cXR/WFDntSYjo+evrJGjnJdKD01AWbcBJ3cQ670U8xtgP5CbG8caJs3+lNAAAAAElFTkSuQmCC');
+      background-size: 21px 21px;
     }
   }
-}
-
-@media (max-width: $screen-md-max) {
 }
 
 @media (max-width: 860px) {
@@ -136,8 +134,22 @@
       padding: 10px 16px 10px 19px;
     }
 
+    .form-group {
+      input {
+        padding-left: 11px;
+      }
+    }
+
     .submit {
       right: 16px;
+    }
+
+    .shareLinks {
+      display: block;
+    }
+
+    .shareLink {
+      margin: 20px auto;
     }
   }
 }
