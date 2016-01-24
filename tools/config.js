@@ -86,6 +86,7 @@ const config = {
       require('postcss-import')({
         onImport: files => files.forEach(this.addDependency),
       }),
+      require('postcss-mixins')(),
       require('precss')(),
       require('autoprefixer')({
         browsers: AUTOPREFIXER_BROWSERS

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import cx from 'classnames';
+//import cx from 'classnames';
 //import raf from '../../lib/requestAnimationFrame';
 //import checkvisible from '../../lib/checkvisible';
 import './PrizeCase.scss';
@@ -7,15 +7,15 @@ import './PrizeCase.scss';
 
 class PrizeCase extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {'shown': false};
-  }
+  //constructor(props) {
+  //  super(props);
+  //  this.state = {'shown': false};
+  //}
 
   render() {
-    const imgClasses = cx('prizeImg',{
-      'shown': this.state.shown
-    });
+    //const imgClasses = cx('prizeImg',{
+    //  'shown': this.state.shown
+    //});
     return (
       <div className='prizeCase'>
         <p>

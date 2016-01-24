@@ -42,7 +42,7 @@ class AffiliateScheme extends Component {
   render() {
     return (
       <div className='affiliateScheme'>
-        <MainHeader title='free perfume for you and your friends' />
+        <MainHeader title='Free perfume for you and your friends' />
         <p>Give your friends a <strong>FREE</strong> perfume.</p>
         <p>Get a <strong>FREE</strong> perfume for every friend that subscribes.</p>
         <ul className='story'>

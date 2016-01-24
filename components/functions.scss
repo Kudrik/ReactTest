@@ -1,0 +1,6 @@
+@define-mixin placeholder {
+  &::-webkit-input-placeholder {@mixin-content;}
+  &::-moz-placeholder          {@mixin-content;}/* Firefox 19+ */
+  &:-moz-placeholder           {@mixin-content;}/* Firefox 18- */
+  &:-ms-input-placeholder      {@mixin-content;}
+}

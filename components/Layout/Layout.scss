@@ -25,6 +25,15 @@
   text-shadow: none;
 }
 
+
+/*
+ * remove focus in webkit
+*/
+
+*:focus {
+  outline: none;
+}
+
 /*
  * Base styles
  * ========================================================================== */
@@ -39,6 +48,7 @@ html, body {
   background-color: #000;
   color: $text-color;
   font: 20px/30px $font-family-base;
+  text-align: center;
 }
 
 .layout {
@@ -48,6 +58,14 @@ html, body {
     padding: 90px 0 100px;
     background-color: #fff;
     transition: padding .25s linear;
+  }
+
+  section {
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-family: $font-family-lite;
+    }
   }
 }
 
