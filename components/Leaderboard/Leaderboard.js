@@ -39,7 +39,8 @@ class LeaderboardTable extends Component {
       rowsCount: props.list.size,
       scrollToIndex: undefined,
       virtualScrollHeight: 300,
-      virtualScrollRowHeight: 30
+      virtualScrollRowHeight: 30,
+      currPage: 1
     };
     this.rowsPerPage = this.state.virtualScrollHeight / this.state.virtualScrollRowHeight | 0;
   }
@@ -49,7 +50,8 @@ class LeaderboardTable extends Component {
       rowsCount,
       scrollToIndex,
       virtualScrollHeight,
-      virtualScrollRowHeight
+      virtualScrollRowHeight,
+      currPage
       } = this.state;
 
     return (
@@ -73,18 +75,18 @@ class LeaderboardTable extends Component {
           rowHeight={virtualScrollRowHeight}
           rowRenderer={this._rowRenderer}
           scrollToIndex={scrollToIndex}
-          onRowsRendered={((obj) => {this.currentRows = obj})}
+          onRowsRendered={this._onRowsRendered}
           />
-        {this._controls()}
+        {this._controls(currPage)}
       </div>
     );
   }
 
-  _controls = () => {
+  _controls = (currPage) => {
     const pagesNum = Math.ceil(this.state.rowsCount / this.rowsPerPage);
     let pages = [];
     for(let i = 1; i <= pagesNum; i++) {
-      pages.push(<span onClick={this._jump} key={i}>{i}</span>)
+      pages.push(<span className={i === currPage ? 'current' : ''} onClick={this._jump} key={i}>{i}</span>)
     }
 
     return (
@@ -96,6 +98,12 @@ class LeaderboardTable extends Component {
     )
   };
 
+  _onRowsRendered = (obj) => {
+    const currPage = Math.ceil(obj.stopIndex / this.rowsPerPage);
+    this.currentRows = obj;
+    this.setState({ currPage })
+  };
+
   _noRowsRenderer = () => {
     return (
       <div>
@@ -105,7 +113,6 @@ class LeaderboardTable extends Component {
   };
 
   _jump = (e) =>{
-    console.log(e.target.innerText);
     this._jumpTo(parseInt(e.target.innerText, 10)*10 - 1);
     raf((() => {this._jumpTo(parseInt(e.target.innerText, 10)*10 - this.rowsPerPage)}));
   };
@@ -126,7 +133,6 @@ class LeaderboardTable extends Component {
     } else if (scrollToIndex > rowsCount) {
       scrollToIndex = rowsCount - 1
     }
-    console.log(scrollToIndex);
     this.setState({ scrollToIndex })
   };
 
