@@ -51,11 +51,16 @@ html, body {
   text-align: center;
 }
 
+/* showing content to prevent jump from non-styled html*/
+body {
+  visibility: visible!important;
+}
+
 .layout {
   min-width: 320px;
 
   > div {
-    padding: 90px 0 100px;
+    padding: 90px 0 42px;
     background-color: #fff;
     transition: padding .25s linear;
   }

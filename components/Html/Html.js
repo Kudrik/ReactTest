@@ -26,7 +26,7 @@ class Html extends Component {
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <script src={'/app.js?' + new Date().getTime()}></script>
       </head>
-      <body>
+      <body style={{visibility:'hidden'}}>
         <div id="app" dangerouslySetInnerHTML={{__html: this.props.body}} />
       </body>
       </html>

@@ -3,6 +3,7 @@ import AffiliateScheme from '../components/AffiliateScheme';
 import PrizeCase from '../components/PrizeCase';
 import InviteForm from '../components/InviteForm';
 import Results from '../components/Results';
+import Terms from '../components/Terms';
 
 export default class extends Component {
 
@@ -13,6 +14,7 @@ export default class extends Component {
         <PrizeCase />
         <InviteForm />
         <Results friends={1} perfumes={1} />
+        <Terms />
       </div>
     );
   }
