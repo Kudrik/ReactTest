@@ -1,0 +1,134 @@
+@import '../variables.scss';
+
+.results {
+  background-color: $content-bg-contrast;
+  border: 1px solid $borders-color;
+  border-left: none;
+  border-right: none;
+
+  h1 {
+    margin: 60px 0 41px;
+  }
+
+  .container {
+    position: relative;
+    width: $screen-md-max;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 50px auto 51px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 75%;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      margin-left: -1px;
+      background-color: $borders-color;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0 10px;
+      font-family: $font-family-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    > div {
+      width: 50%;
+      max-width: 260px;
+    }
+
+    .perfumes {
+      margin: 0 65px 0 0;
+
+      p {
+        background-image: url('/i/Results/perfumes.png');
+      }
+    }
+
+    .friends {
+      margin: 0 0 0 65px;
+
+      p {
+        background-image: url('/i/Results/friends.png');
+      }
+    }
+
+    p {
+      display: block;
+      padding: 20% 0 20% 200px;
+      margin: 13px auto 0;
+      font-size: 32px;
+      line-height: 40px;
+      color: $brand-color;
+      background: no-repeat left 50%;
+      background-size: contain;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .results {
+    .container {
+
+      .perfumes p {
+        background-image: url('/i/Results/perfumes@2x.png');
+      }
+
+      .friends p {
+        background-image: url('/i/Results/friends@2x.png');
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .results {
+
+    .container {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .results {
+
+    .container {
+
+      > div {
+        width: 40%;
+      }
+
+      .friends {
+        margin: 0 0 0 5%;
+      }
+
+      .perfumes {
+        margin: 0 5% 0 0;
+      }
+
+      p {
+        padding: 15% 0 15% 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .results {
+
+    .container {
+
+      h2 {
+        white-space: normal;
+      }
+    }
+  }
+}
