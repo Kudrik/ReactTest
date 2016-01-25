@@ -1,19 +1,21 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { Component } from 'react';
+import AffiliateScheme from '../components/AffiliateScheme';
+import Terms from '../components/Terms';
+import Link from '../components/Link';
 
 export default class extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Not Found</h1>
-        <p>The page you're looking for was not found.</p>
-      </div>
+    <div>
+      <AffiliateScheme />
+      <h1>Not Found</h1>
+      <p>
+        The page you're looking for was not found.<br />
+        <Link to='/' href='/'>Your profile</Link>
+      </p>
+      <Terms />
+    </div>
     );
   }
 

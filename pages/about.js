@@ -1,20 +1,20 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { Component } from 'react';
+import AffiliateScheme from '../components/AffiliateScheme';
+import Terms from '../components/Terms';
+import Link from '../components/Link';
 
 export default class extends Component {
-
   render() {
     return (
       <div>
-        <h1>About Us</h1>
-        <p>Coming soon.</p>
+        <AffiliateScheme />
+        <p style={{font:'25px / 40px "proxima_nova_light", "Helvetica", sans-serif;', width: '700px', margin: '20px auto'}}>
+          This page demonstrates ability of react-router. <br />
+          Click the link and you will go to a new page without page reloading but keeping browser`s history (facebook style)<br />
+          <Link to='/' href='/'>Your profile</Link>
+        </p>
+        <Terms />
       </div>
     );
   }
-
 }

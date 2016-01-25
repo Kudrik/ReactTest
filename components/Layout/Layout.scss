@@ -52,8 +52,8 @@ html, body {
 }
 
 /* showing content to prevent jump from non-styled html*/
-body {
-  visibility: visible!important;
+#app {
+  display: block!important;
 }
 
 .layout {
