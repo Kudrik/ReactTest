@@ -8,7 +8,7 @@ export default class extends Component {
     return (
       <div>
         <AffiliateScheme />
-        <p style={{font:'25px / 40px "proxima_nova_light", "Helvetica", sans-serif;', width: '700px', margin: '20px auto'}}>
+        <p style={{font:'25px / 40px "proxima_nova_light", "Helvetica", sans-serif', width: '700px', margin: '20px auto'}}>
           This page demonstrates ability of react-router. <br />
           Click the link and you will go to a new page without page reloading but keeping browser`s history (facebook style)<br />
           <Link to='/' href='/'>Your profile</Link>
