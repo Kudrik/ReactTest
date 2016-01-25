@@ -41,13 +41,13 @@ I've used 'flexbox' layout just to try it. That is why IE9 is not supported. But
 
 Outline for this document:
 
-Free perfume for you and your friends
-  1. Get your free perfumes
-  2. Watch your results
-    1. Friends subscribed
-    2. Perfumes earned
-  3. Leaderboard
-  4. Terms of the program
+1. Free perfume for you and your friends
+    1. Get your free perfumes
+    2. Watch your results
+      1. Friends subscribed
+      2. Perfumes earned
+    3. Leaderboard
+    4. Terms of the program
 
 ----------
 
