@@ -39,6 +39,9 @@ I've used 'flexbox' layout just to try it. That is why IE9 is not supported. But
 
 ### SEO
 
+I've used [html5 section-style outlining](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document)
+ 
+ 
 Outline for this document:
 
 1. Free perfume for you and your friends
