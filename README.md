@@ -49,6 +49,8 @@ Outline for this document:
     3. Leaderboard
     4. Terms of the program
 
+Semantic figure presentation for content-important images. First page in google search results is not just for text...
+
 ----------
 
 ### Directory Layout of interest
