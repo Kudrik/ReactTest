@@ -70,7 +70,7 @@ Outline for this document:
 Just clone the repo, install Node.js modules and run `npm start`:
 
 ```
-$ git clone https://github.com/Kudrik/Scentbird.git KudrikTest
+$ git clone https://github.com/Kudrik/ReactTest.git KudrikTest
 $ cd KudrikTest
 $ npm install
 $ npm start
